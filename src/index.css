@@ -23,8 +23,8 @@ body {
   margin: 14px;
   transition: all .2s ease-in-out;
   background-color: white;
-  /* box-shadow: 4px 4px 10px 0px #000000; */
-  box-shadow: 0px 0px 1px 1px black;
+  box-shadow: 4px 4px 10px 0px #000000;
+  /* box-shadow: 0px 0px 1px 1px black; */
 }
 /* .episode-box:hover {
   box-shadow: 0px 0px 4px 4px blue;
