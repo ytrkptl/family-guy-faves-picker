@@ -15,7 +15,11 @@ export default function EpisodesList(props: IProps): Array<JSX.Element> {
 
   return episodes.map((episode: IEpisode) => {
     return (
-      <section key={episode.id} className='episode-box'>
+      <section key={episode.id} className=
+        {favorites.find((fav: IEpisode) => fav.id === episode.id)
+        ? 'episode-box-fav'
+        : 'episode-box'}
+      >
         <img className='' src={!!episode.image ? episode.image.medium : NoPhoto} alt={`Family Guy ${episode.name}`} style={{height: '140px'}} />
         <div className='textContainer'>
           <div className='textCol1'>
