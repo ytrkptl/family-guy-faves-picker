@@ -13,7 +13,7 @@ export default function App({
     <React.Fragment>
       <header className='headerStyle'>
         <div className='headerPart1'>
-          <h1 className='title'><Link to='/'  className='titleLinkStyle'>Family Guy</Link></h1>
+          <h1 className='title'><Link to='/'  className='titleLinkStyle'>Family Guy Episode Picker</Link></h1>
           <p className='subtitle'>Pick your favorite Family Guy episode!!!</p>
         </div>
         <div  className='tabs'>
