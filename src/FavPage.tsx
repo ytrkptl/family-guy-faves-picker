@@ -21,8 +21,12 @@ export default function FavPage(): JSX.Element {
       <React.Suspense fallback={<div>loading...</div>}>
         <div className='episode-layout'>
           <EpisodeList {...props} />
-          {props.favorites.length===0? `You haven't marked any items as favorites yet!
-          Navigate back to the home page to mark items as favorites.`: null}
+          {props.favorites.length===0? 
+          <div className='favDefaultText'>
+            <h3 style={{padding: '10px', textAlign: 'center'}}>{`You haven't marked any items as favorites yet!`}</h3>
+            <h3 style={{padding: '10px', textAlign: 'center'}}>{`Navigate back to the home page to mark items as favorites.`}</h3>
+          </div>
+          : null}
         </div>
       </React.Suspense>
     </App>
