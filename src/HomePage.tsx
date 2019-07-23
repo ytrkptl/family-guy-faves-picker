@@ -9,7 +9,7 @@ const EpisodeList = React.lazy<any>(() => import('./EpisodesList'))
 
 export default function HomePage() {
   const { state, dispatch } = React.useContext(Store)
-
+ 
   React.useEffect(() => {
     state.episodes.length === 0 && fetchDataAction(dispatch)
   })
@@ -26,6 +26,9 @@ export default function HomePage() {
       <React.Suspense fallback={<div>loading...</div>}>
         <section className='episode-layout'>
           <EpisodeList {...props} />
+          <div id="floatingBtn">
+            <p>&#8679;</p>
+          </div>
         </section>
       </React.Suspense>
     </App>

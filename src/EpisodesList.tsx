@@ -20,7 +20,7 @@ export default function EpisodesList(props: IProps): Array<JSX.Element> {
         ? 'episode-box-fav'
         : 'episode-box'}
       >
-        <img className='' src={!!episode.image ? episode.image.medium : NoPhoto} alt={`Family Guy ${episode.name}`} style={{height: '140px'}} />
+        <img src={!!episode.image ? episode.image.medium : NoPhoto} alt={`Family Guy ${episode.name}`} style={{height: '140px'}} />
         <div className='textContainer'>
           <div className='textCol1'>
             <h4 className="episode-name">{episode.name}</h4>
