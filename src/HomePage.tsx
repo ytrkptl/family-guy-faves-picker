@@ -4,15 +4,12 @@ import App from './App'
 import { Store } from './Storefile'
 import { IEpisodeProps } from './interfaces'
 import { fetchDataAction, toggleFavAction } from './Actions'
-import { JSXElement } from '@babel/types';
+
 const EpisodeList = React.lazy<any>(() => import('./EpisodesList'))
 
 const HomePage = () => {
   const { state, dispatch } = React.useContext(Store)
-<<<<<<< HEAD
-=======
 
->>>>>>> parent of 59b6d78... changed layout a bit
   React.useEffect(() => {
     state.episodes.length === 0 && fetchDataAction(dispatch)
   })
@@ -52,10 +49,7 @@ const HomePage = () => {
       <React.Suspense fallback={<div>loading...</div>}>
         <section className='episode-layout' ref={epilayout} onScroll={handleScroll}>
           <EpisodeList {...props} />
-<<<<<<< HEAD
           <span ref={floatingBtn} id="floatingBtn" style={{display: `${display}`}} onClick={handleClick}>&#8679;</span>
-=======
->>>>>>> parent of 59b6d78... changed layout a bit
         </section>
       </React.Suspense>
     </App>
