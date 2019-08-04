@@ -27,7 +27,7 @@ body {
 .episode-box, .episode-box-fav {
   margin: 14px;
   background-color: white;
-  box-shadow: 4px 4px 8px 0px #000000;
+  box-shadow: 1px 1px 1px 0px #000000;
   max-height: 246px;
 }
 .episode-box-fav {
@@ -60,6 +60,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 60%;
+  margin-left: 1%;
 }
 .title {
   margin: 0;
@@ -79,14 +80,14 @@ body {
 
 .tabs {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   width: 40%;
 }
 
 .linkStyle {
   background: #dfe6e9;
-  margin: 28px 0px 0px 0px;
+  margin: 28px 10px 0px 0px;
   padding: 10px;
   font-weight: bold;
   font-size: 18px;
@@ -96,6 +97,7 @@ body {
   text-align: center;
   transition: all .2s ease-in-out;
   height: 30px;
+  white-space: nowrap;
 }
 
 .linkStyle:hover {

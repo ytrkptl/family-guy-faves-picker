@@ -10,6 +10,7 @@ export type FavAction = (
   dispatch: Dispatch,
   episode: IEpisode
 ) => IAction
+
 export interface IState {
   episodes: Array<IEpisode>
   favorites: Array<IEpisode>
