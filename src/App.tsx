@@ -22,7 +22,6 @@ export default function App({
         </div>
       </header>
       {children}
-      <footer>Credits</footer>
     </React.Fragment>
   )
 }
